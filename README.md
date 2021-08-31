@@ -1,14 +1,9 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--Bu script tamamen Deku Tr'ye aittir eğer çalmaya çalışan veya ismini değiştiren hakkında hukuki süreç başlatılacaktır.
 
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
 local PetSimulatorX = Instance.new("TextButton")
-
---Properties:
 
 DekuHub.Name = "Deku Hub"
 DekuHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
