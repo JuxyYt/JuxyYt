@@ -7,6 +7,7 @@
 
 
 
+
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
@@ -14,6 +15,7 @@ local ShindoLife = Instance.new("TextButton")
 local PetSimulatorX = Instance.new("TextButton")
 local AnimeFightersMurderMystery = Instance.new("TextButton")
 local StandAwakening = Instance.new("TextButton")
+local ShindoLifewar = Instance.new("TextButton")
 
 
 
@@ -23,8 +25,8 @@ DekuHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = DekuHub
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Frame.Position = UDim2.new(0.658124447, 0, 0.681135178, 0)
-Frame.Size = UDim2.new(0, 386, 0, 191)
+Frame.Position = UDim2.new(0.684673071, 0, 0.696160197, 0)
+Frame.Size = UDim2.new(0, 356, 0, 182)
 
 WelcometoDekuHub.Name = "Welcome to Deku Hub"
 WelcometoDekuHub.Parent = Frame
@@ -82,39 +84,59 @@ StandAwakening.Text = "Stand Awakening"
 StandAwakening.TextColor3 = Color3.fromRGB(163, 163, 163)
 StandAwakening.TextSize = 14.000
 
+ShindoLifewar.Name = "Shindo Life war"
+ShindoLifewar.Parent = Frame
+ShindoLifewar.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+ShindoLifewar.BorderColor3 = Color3.fromRGB(75, 75, 75)
+ShindoLifewar.Position = UDim2.new(0.235751301, 0, 0.309116691, 0)
+ShindoLifewar.Size = UDim2.new(0, 137, 0, 25)
+ShindoLifewar.Font = Enum.Font.SourceSans
+ShindoLifewar.Text = "Shindo Life War Mode AF"
+ShindoLifewar.TextColor3 = Color3.fromRGB(163, 163, 163)
+ShindoLifewar.TextSize = 14.000
+
 -- Scripts:
 
-local function UJHRBPY_fake_script() -- ShindoLife.LocalScript 
+local function RHVMJ_fake_script() -- ShindoLife.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/autofarm"))()
 	end)
 end
-coroutine.wrap(UJHRBPY_fake_script)()
-local function NKVGU_fake_script() -- PetSimulatorX.LocalScript 
+coroutine.wrap(RHVMJ_fake_script)()
+local function QEAVKB_fake_script() -- PetSimulatorX.LocalScript 
 	local script = Instance.new('LocalScript', PetSimulatorX)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
 	end)
 end
-coroutine.wrap(NKVGU_fake_script)()
-local function KDHS_fake_script() -- AnimeFightersMurderMystery.LocalScript 
+coroutine.wrap(QEAVKB_fake_script)()
+local function QZSSUXN_fake_script() -- AnimeFightersMurderMystery.LocalScript 
 	local script = Instance.new('LocalScript', AnimeFightersMurderMystery)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 	end)
 end
-coroutine.wrap(KDHS_fake_script)()
-local function IABHD_fake_script() -- StandAwakening.LocalScript 
+coroutine.wrap(QZSSUXN_fake_script)()
+local function MAJBAF_fake_script() -- StandAwakening.LocalScript 
 	local script = Instance.new('LocalScript', StandAwakening)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
 	end)
 end
-coroutine.wrap(IABHD_fake_script)()
+coroutine.wrap(MAJBAF_fake_script)()
+local function EJMK_fake_script() -- ShindoLifewar.LocalScript 
+	local script = Instance.new('LocalScript', ShindoLifewar)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/war
+	end)
+end
+coroutine.wrap(EJMK_fake_script)()
+
 
 
