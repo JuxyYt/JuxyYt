@@ -1,11 +1,15 @@
 --Bu script tamamen Deku Tr'ye aittir eğer çalmaya çalışan veya ismini değiştiren hakkında hukuki süreç başlatılacaktır.
 
 
+
+
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
 local ShindoLife = Instance.new("TextButton")
 local PetSimulatorX = Instance.new("TextButton")
+local AnimeFightersMurderMystery = Instance.new("TextButton")
+local StandAwakening = Instance.new("TextButton")
 
 
 
@@ -52,21 +56,59 @@ PetSimulatorX.Text = "Pet Simulator X"
 PetSimulatorX.TextColor3 = Color3.fromRGB(163, 163, 163)
 PetSimulatorX.TextSize = 14.000
 
+AnimeFightersMurderMystery.Name = "Anime Fighters-Murder Mystery"
+AnimeFightersMurderMystery.Parent = Frame
+AnimeFightersMurderMystery.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+AnimeFightersMurderMystery.BorderColor3 = Color3.fromRGB(75, 75, 75)
+AnimeFightersMurderMystery.Position = UDim2.new(0.468911916, 0, 0.17822665, 0)
+AnimeFightersMurderMystery.Size = UDim2.new(0, 178, 0, 25)
+AnimeFightersMurderMystery.Font = Enum.Font.SourceSans
+AnimeFightersMurderMystery.Text = "Anime Fighters-Murder Mystery 2"
+AnimeFightersMurderMystery.TextColor3 = Color3.fromRGB(163, 163, 163)
+AnimeFightersMurderMystery.TextSize = 14.000
+
+StandAwakening.Name = "Stand Awakening"
+StandAwakening.Parent = Frame
+StandAwakening.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+StandAwakening.BorderColor3 = Color3.fromRGB(75, 75, 75)
+StandAwakening.Position = UDim2.new(0.00777202053, 0, 0.309116691, 0)
+StandAwakening.Size = UDim2.new(0, 88, 0, 25)
+StandAwakening.Font = Enum.Font.SourceSans
+StandAwakening.Text = "Stand Awakening"
+StandAwakening.TextColor3 = Color3.fromRGB(163, 163, 163)
+StandAwakening.TextSize = 14.000
+
 -- Scripts:
 
-local function IIHVFHB_fake_script() -- ShindoLife.LocalScript 
+local function UJHRBPY_fake_script() -- ShindoLife.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife"))()
 	end)
 end
-coroutine.wrap(IIHVFHB_fake_script)()
-local function RKTTL_fake_script() -- PetSimulatorX.LocalScript 
+coroutine.wrap(UJHRBPY_fake_script)()
+local function NKVGU_fake_script() -- PetSimulatorX.LocalScript 
 	local script = Instance.new('LocalScript', PetSimulatorX)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
 	end)
 end
-coroutine.wrap(RKTTL_fake_script)()
+coroutine.wrap(NKVGU_fake_script)()
+local function KDHS_fake_script() -- AnimeFightersMurderMystery.LocalScript 
+	local script = Instance.new('LocalScript', AnimeFightersMurderMystery)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+	end)
+end
+coroutine.wrap(KDHS_fake_script)()
+local function IABHD_fake_script() -- StandAwakening.LocalScript 
+	local script = Instance.new('LocalScript', StandAwakening)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
+	end)
+end
+coroutine.wrap(IABHD_fake_script)()
