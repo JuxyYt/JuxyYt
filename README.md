@@ -3,7 +3,8 @@
 
 
 
-local DekuHub = Instance.new("ScreenGui")
+
+
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
 local ShindoLife = Instance.new("TextButton")
@@ -13,11 +14,7 @@ local StandAwakening = Instance.new("TextButton")
 
 
 
-DekuHub.Name = "Deku Hub"
-DekuHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-DekuHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = DekuHub
+Frame.Parent = game.StarterGui.Deku Hub
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Frame.Position = UDim2.new(0.658124447, 0, 0.681135178, 0)
 Frame.Size = UDim2.new(0, 386, 0, 191)
@@ -80,35 +77,35 @@ StandAwakening.TextSize = 14.000
 
 -- Scripts:
 
-local function UJHRBPY_fake_script() -- ShindoLife.LocalScript 
+local function XOHJ_fake_script() -- ShindoLife.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife)
 
 	script.parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/autofarm"))()
 	end)
 end
-coroutine.wrap(UJHRBPY_fake_script)()
-local function NKVGU_fake_script() -- PetSimulatorX.LocalScript 
+coroutine.wrap(XOHJ_fake_script)()
+local function ZVKMQL_fake_script() -- PetSimulatorX.LocalScript 
 	local script = Instance.new('LocalScript', PetSimulatorX)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
 	end)
 end
-coroutine.wrap(NKVGU_fake_script)()
-local function KDHS_fake_script() -- AnimeFightersMurderMystery.LocalScript 
+coroutine.wrap(ZVKMQL_fake_script)()
+local function NGBFWA_fake_script() -- AnimeFightersMurderMystery.LocalScript 
 	local script = Instance.new('LocalScript', AnimeFightersMurderMystery)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 	end)
 end
-coroutine.wrap(KDHS_fake_script)()
-local function IABHD_fake_script() -- StandAwakening.LocalScript 
+coroutine.wrap(NGBFWA_fake_script)()
+local function OTXOA_fake_script() -- StandAwakening.LocalScript 
 	local script = Instance.new('LocalScript', StandAwakening)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
 	end)
 end
-coroutine.wrap(IABHD_fake_script)()
+coroutine.wrap(OTXOA_fake_script)()
