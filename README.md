@@ -5,6 +5,11 @@
 
 
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
 local ShindoLife = Instance.new("TextButton")
@@ -12,7 +17,7 @@ local PetSimulatorX = Instance.new("TextButton")
 local AnimeFightersMurderMystery = Instance.new("TextButton")
 local StandAwakening = Instance.new("TextButton")
 
-
+--Properties:
 
 Frame.Parent = game.StarterGui.Deku Hub
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -109,3 +114,4 @@ local function OTXOA_fake_script() -- StandAwakening.LocalScript
 	end)
 end
 coroutine.wrap(OTXOA_fake_script)()
+
