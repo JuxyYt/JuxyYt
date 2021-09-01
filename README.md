@@ -95,7 +95,6 @@ ShindoLifewar.Text = "Shindo Life War Mode AF"
 ShindoLifewar.TextColor3 = Color3.fromRGB(163, 163, 163)
 ShindoLifewar.TextSize = 14.000
 
--- Scripts:
 
 local function RHVMJ_fake_script() -- ShindoLife.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife)
