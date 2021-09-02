@@ -3,17 +3,11 @@
 
 
 
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
 
---Properties:
+
 
 DekuHub.Name = "Deku Hub"
 DekuHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
