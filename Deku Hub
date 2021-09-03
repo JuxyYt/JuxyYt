@@ -1,16 +1,21 @@
 --Yayanlar hakkında hukuki süreç başlatılacaktır.
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local WelcometoDekuHub = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
 local AnimeFightersMurderMystery = Instance.new("TextButton")
-local StandAwakening = Instance.new("TextButton")
-local ShindoLife = Instance.new("TextButton")
 local PetSimulatorX = Instance.new("TextButton")
+local ShindoLife = Instance.new("TextButton")
 local ShindoLife_2 = Instance.new("TextButton")
-local ShindoLife_3 = Instance.new("TextButton")
+local StandAwakening = Instance.new("TextButton")
 
-
+--Properties:
 
 DekuHub.Name = "Deku Hub"
 DekuHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -18,15 +23,15 @@ DekuHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = DekuHub
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Frame.Position = UDim2.new(0.706752419, 0, -5.96046448e-08, 0)
-Frame.Size = UDim2.new(0, 361, 0, 167)
+Frame.Position = UDim2.new(0.253203511, 0, 0.383973271, 0)
+Frame.Size = UDim2.new(0, 537, 0, 286)
 
 WelcometoDekuHub.Name = "Welcome to Deku Hub"
 WelcometoDekuHub.Parent = Frame
 WelcometoDekuHub.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 WelcometoDekuHub.BorderColor3 = Color3.fromRGB(75, 75, 75)
-WelcometoDekuHub.Position = UDim2.new(0, 0, -0.0109890113, 0)
-WelcometoDekuHub.Size = UDim2.new(0, 356, 0, 34)
+WelcometoDekuHub.Position = UDim2.new(0, 0, -0.000499485235, 0)
+WelcometoDekuHub.Size = UDim2.new(0, 537, 0, 34)
 WelcometoDekuHub.Font = Enum.Font.SourceSans
 WelcometoDekuHub.Text = "Deku Hub'a Hos Geldin!"
 WelcometoDekuHub.TextColor3 = Color3.fromRGB(163, 163, 163)
@@ -34,119 +39,115 @@ WelcometoDekuHub.TextScaled = true
 WelcometoDekuHub.TextSize = 14.000
 WelcometoDekuHub.TextWrapped = true
 
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.878957152, 0, -0.0917347744, 0)
+Close.Size = UDim2.new(0, 98, 0, 82)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 35.000
+Close.TextWrapped = true
+
 AnimeFightersMurderMystery.Name = "Anime Fighters-Murder Mystery"
 AnimeFightersMurderMystery.Parent = Frame
 AnimeFightersMurderMystery.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 AnimeFightersMurderMystery.BorderColor3 = Color3.fromRGB(75, 75, 75)
-AnimeFightersMurderMystery.Position = UDim2.new(0.497463495, 0, 0.17822668, 0)
-AnimeFightersMurderMystery.Size = UDim2.new(0, 181, 0, 25)
+AnimeFightersMurderMystery.Position = UDim2.new(0.0151543366, 0, 0.139765173, 0)
+AnimeFightersMurderMystery.Size = UDim2.new(0, 223, 0, 47)
 AnimeFightersMurderMystery.Font = Enum.Font.SourceSans
 AnimeFightersMurderMystery.Text = "Anime Fighters-Murder Mystery 2"
 AnimeFightersMurderMystery.TextColor3 = Color3.fromRGB(163, 163, 163)
-AnimeFightersMurderMystery.TextSize = 14.000
+AnimeFightersMurderMystery.TextSize = 19.000
 
-StandAwakening.Name = "Stand Awakening"
-StandAwakening.Parent = Frame
-StandAwakening.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-StandAwakening.BorderColor3 = Color3.fromRGB(75, 75, 75)
-StandAwakening.Position = UDim2.new(0.00223185448, 0, 0.333068788, 0)
-StandAwakening.Size = UDim2.new(0, 88, 0, 25)
-StandAwakening.Font = Enum.Font.SourceSans
-StandAwakening.Text = "Stand Awakening"
-StandAwakening.TextColor3 = Color3.fromRGB(163, 163, 163)
-StandAwakening.TextSize = 14.000
+PetSimulatorX.Name = "Pet Simulator X"
+PetSimulatorX.Parent = Frame
+PetSimulatorX.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+PetSimulatorX.BorderColor3 = Color3.fromRGB(75, 75, 75)
+PetSimulatorX.Position = UDim2.new(0.736778736, 0, 0.139765173, 0)
+PetSimulatorX.Size = UDim2.new(0, 112, 0, 47)
+PetSimulatorX.Font = Enum.Font.SourceSans
+PetSimulatorX.Text = "Pet Simulator X"
+PetSimulatorX.TextColor3 = Color3.fromRGB(163, 163, 163)
+PetSimulatorX.TextSize = 19.000
 
 ShindoLife.Name = "Shindo Life"
 ShindoLife.Parent = Frame
 ShindoLife.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 ShindoLife.BorderColor3 = Color3.fromRGB(75, 75, 75)
-ShindoLife.Position = UDim2.new(0, 0, 0.178226724, 0)
-ShindoLife.Size = UDim2.new(0, 90, 0, 25)
+ShindoLife.Position = UDim2.new(0.24767226, 0, 0.342562377, 0)
+ShindoLife.Size = UDim2.new(0, 166, 0, 36)
 ShindoLife.Font = Enum.Font.SourceSans
-ShindoLife.Text = "Shindo Life"
+ShindoLife.Text = "Shindo life War mode AF"
 ShindoLife.TextColor3 = Color3.fromRGB(163, 163, 163)
-ShindoLife.TextSize = 14.000
-
-PetSimulatorX.Name = "Pet Simulator X"
-PetSimulatorX.Parent = ShindoLife
-PetSimulatorX.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-PetSimulatorX.BorderColor3 = Color3.fromRGB(75, 75, 75)
-PetSimulatorX.Position = UDim2.new(0.991899788, 0, 0.0582267195, 0)
-PetSimulatorX.Size = UDim2.new(0, 90, 0, 25)
-PetSimulatorX.Font = Enum.Font.SourceSans
-PetSimulatorX.Text = "Pet Simulator X"
-PetSimulatorX.TextColor3 = Color3.fromRGB(163, 163, 163)
-PetSimulatorX.TextSize = 14.000
+ShindoLife.TextSize = 19.000
 
 ShindoLife_2.Name = "Shindo Life"
 ShindoLife_2.Parent = Frame
 ShindoLife_2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 ShindoLife_2.BorderColor3 = Color3.fromRGB(75, 75, 75)
-ShindoLife_2.Position = UDim2.new(0.249307483, 0, 0.333915353, 0)
-ShindoLife_2.Size = UDim2.new(0, 129, 0, 25)
+ShindoLife_2.Position = UDim2.new(0.0148975793, 0, 0.342562377, 0)
+ShindoLife_2.Size = UDim2.new(0, 107, 0, 37)
 ShindoLife_2.Font = Enum.Font.SourceSans
-ShindoLife_2.Text = "Shindo life War mode AF"
+ShindoLife_2.Text = "Shindo Life"
 ShindoLife_2.TextColor3 = Color3.fromRGB(163, 163, 163)
-ShindoLife_2.TextSize = 14.000
+ShindoLife_2.TextSize = 19.000
 
-ShindoLife_3.Name = "Shindo Life"
-ShindoLife_3.Parent = Frame
-ShindoLife_3.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-ShindoLife_3.BorderColor3 = Color3.fromRGB(75, 75, 75)
-ShindoLife_3.Position = UDim2.new(0.567867041, 0, 0.333915353, 0)
-ShindoLife_3.Size = UDim2.new(0, 99, 0, 25)
-ShindoLife_3.Font = Enum.Font.SourceSans
-ShindoLife_3.Text = "Shindo Life Spin"
-ShindoLife_3.TextColor3 = Color3.fromRGB(163, 163, 163)
-ShindoLife_3.TextSize = 14.000
-
+StandAwakening.Name = "Stand Awakening"
+StandAwakening.Parent = Frame
+StandAwakening.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+StandAwakening.BorderColor3 = Color3.fromRGB(75, 75, 75)
+StandAwakening.Position = UDim2.new(0.471135944, 0, 0.139765173, 0)
+StandAwakening.Size = UDim2.new(0, 117, 0, 47)
+StandAwakening.Font = Enum.Font.SourceSans
+StandAwakening.Text = "Stand Awakening"
+StandAwakening.TextColor3 = Color3.fromRGB(163, 163, 163)
+StandAwakening.TextSize = 19.000
+Close.MouseButton1Down:connect(function()
+	Frame.Visible = false
+end)
 -- Scripts:
 
-local function SLDR_fake_script() -- AnimeFightersMurderMystery.LocalScript 
+local function UBDXCLG_fake_script() -- AnimeFightersMurderMystery.LocalScript 
 	local script = Instance.new('LocalScript', AnimeFightersMurderMystery)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 	end)
 end
-coroutine.wrap(SLDR_fake_script)()
-local function MWJYWI_fake_script() -- StandAwakening.LocalScript 
-	local script = Instance.new('LocalScript', StandAwakening)
-
-	script.parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
-	end)
-end
-coroutine.wrap(MWJYWI_fake_script)()
-local function GRLDU_fake_script() -- ShindoLife.LocalScript 
-	local script = Instance.new('LocalScript', ShindoLife)
-
-	script.parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/autofarm"))()
-	end)
-end
-coroutine.wrap(GRLDU_fake_script)()
-local function YAGE_fake_script() -- PetSimulatorX.LocalScript 
+coroutine.wrap(UBDXCLG_fake_script)()
+local function HLQMDYK_fake_script() -- PetSimulatorX.LocalScript 
 	local script = Instance.new('LocalScript', PetSimulatorX)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
 	end)
 end
-coroutine.wrap(YAGE_fake_script)()
-local function KYPMVOV_fake_script() -- ShindoLife_2.LocalScript 
-	local script = Instance.new('LocalScript', ShindoLife_2)
+coroutine.wrap(HLQMDYK_fake_script)()
+local function TFHFHF_fake_script() -- ShindoLife.LocalScript 
+	local script = Instance.new('LocalScript', ShindoLife)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/war"))()
 	end)
 end
-coroutine.wrap(KYPMVOV_fake_script)()
-local function BQNFZIB_fake_script() -- ShindoLife_3.LocalScript 
-	local script = Instance.new('LocalScript', ShindoLife_3)
+coroutine.wrap(TFHFHF_fake_script)()
+local function AMJFW_fake_script() -- ShindoLife_2.LocalScript 
+	local script = Instance.new('LocalScript', ShindoLife_2)
 
 	script.parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/spins"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/autofarm"))()
 	end)
 end
-coroutine.wrap(BQNFZIB_fake_script)()
+coroutine.wrap(AMJFW_fake_script)()
+local function HLAUPNL_fake_script() -- StandAwakening.LocalScript 
+	local script = Instance.new('LocalScript', StandAwakening)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
+	end)
+end
+coroutine.wrap(HLAUPNL_fake_script)()
+
