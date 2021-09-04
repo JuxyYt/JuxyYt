@@ -150,4 +150,3 @@ local function HLAUPNL_fake_script() -- StandAwakening.LocalScript
 	end)
 end
 coroutine.wrap(HLAUPNL_fake_script)()
-
