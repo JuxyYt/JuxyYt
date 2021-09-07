@@ -1,9 +1,4 @@
---Yayanlar hakkında hukuki süreç başlatılacaktır.
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local DekuHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -14,8 +9,8 @@ local PetSimulatorX = Instance.new("TextButton")
 local ShindoLife = Instance.new("TextButton")
 local ShindoLife_2 = Instance.new("TextButton")
 local StandAwakening = Instance.new("TextButton")
+local WelcometoDekuHub_2 = Instance.new("TextLabel")
 
---Properties:
 
 DekuHub.Name = "Deku Hub"
 DekuHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -23,7 +18,7 @@ DekuHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = DekuHub
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Frame.Position = UDim2.new(0.253203511, 0, 0.383973271, 0)
+Frame.Position = UDim2.new(0.144292593, 0, 0.213689446, 0)
 Frame.Size = UDim2.new(0, 537, 0, 286)
 
 WelcometoDekuHub.Name = "Welcome to Deku Hub"
@@ -33,7 +28,7 @@ WelcometoDekuHub.BorderColor3 = Color3.fromRGB(75, 75, 75)
 WelcometoDekuHub.Position = UDim2.new(0, 0, -0.000499485235, 0)
 WelcometoDekuHub.Size = UDim2.new(0, 537, 0, 34)
 WelcometoDekuHub.Font = Enum.Font.SourceSans
-WelcometoDekuHub.Text = "Deku Hub'a Hos Geldin!"
+WelcometoDekuHub.Text = "Welcome to Deku Hub!"
 WelcometoDekuHub.TextColor3 = Color3.fromRGB(163, 163, 163)
 WelcometoDekuHub.TextScaled = true
 WelcometoDekuHub.TextSize = 14.000
@@ -105,48 +100,59 @@ StandAwakening.Font = Enum.Font.SourceSans
 StandAwakening.Text = "Stand Awakening"
 StandAwakening.TextColor3 = Color3.fromRGB(163, 163, 163)
 StandAwakening.TextSize = 19.000
-Close.MouseButton1Down:connect(function()
-	Frame.Visible = false
-end)
--- Scripts:
 
-local function UBDXCLG_fake_script() -- AnimeFightersMurderMystery.LocalScript 
+WelcometoDekuHub_2.Name = "Welcome to Deku Hub"
+WelcometoDekuHub_2.Parent = Frame
+WelcometoDekuHub_2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+WelcometoDekuHub_2.BorderColor3 = Color3.fromRGB(57, 57, 57)
+WelcometoDekuHub_2.Position = UDim2.new(0.897579134, 0, 0.936563373, 0)
+WelcometoDekuHub_2.Size = UDim2.new(0, 47, 0, 18)
+WelcometoDekuHub_2.Font = Enum.Font.SourceSans
+WelcometoDekuHub_2.Text = "V 0.1"
+WelcometoDekuHub_2.TextColor3 = Color3.fromRGB(163, 163, 163)
+WelcometoDekuHub_2.TextScaled = true
+WelcometoDekuHub_2.TextSize = 14.000
+WelcometoDekuHub_2.TextWrapped = true
+
+
+
+local function PMJEWJ_fake_script() -- AnimeFightersMurderMystery.LocalScript 
 	local script = Instance.new('LocalScript', AnimeFightersMurderMystery)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 	end)
 end
-coroutine.wrap(UBDXCLG_fake_script)()
-local function HLQMDYK_fake_script() -- PetSimulatorX.LocalScript 
+coroutine.wrap(PMJEWJ_fake_script)()
+local function TDIIS_fake_script() -- PetSimulatorX.LocalScript 
 	local script = Instance.new('LocalScript', PetSimulatorX)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
 	end)
 end
-coroutine.wrap(HLQMDYK_fake_script)()
-local function TFHFHF_fake_script() -- ShindoLife.LocalScript 
+coroutine.wrap(TDIIS_fake_script)()
+local function SHVMHF_fake_script() -- ShindoLife.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/war"))()
 	end)
 end
-coroutine.wrap(TFHFHF_fake_script)()
-local function AMJFW_fake_script() -- ShindoLife_2.LocalScript 
+coroutine.wrap(SHVMHF_fake_script)()
+local function TIRAE_fake_script() -- ShindoLife_2.LocalScript 
 	local script = Instance.new('LocalScript', ShindoLife_2)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2-hub/main/autofarm"))()
 	end)
 end
-coroutine.wrap(AMJFW_fake_script)()
-local function HLAUPNL_fake_script() -- StandAwakening.LocalScript 
+coroutine.wrap(TIRAE_fake_script)()
+local function ICRTO_fake_script() -- StandAwakening.LocalScript 
 	local script = Instance.new('LocalScript', StandAwakening)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
 	end)
 end
-coroutine.wrap(HLAUPNL_fake_script)()
+coroutine.wrap(ICRTO_fake_script)()
